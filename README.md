@@ -29,21 +29,21 @@ $ sudo ldconfig
 ```
 
 How to compile geo-netstat:
-
-  - $ gcc -o geo-netstat -L/usr/local/lib/ -I/usr/local/include/ geo-netstat.c -lmaxminddb
-
+```
+$ gcc -o geo-netstat -L/usr/local/lib/ -I/usr/local/include/ geo-netstat.c -lmaxminddb
+```
 
 How to install geo-netstat:
-
-  - $ sudo mv geo-netstat /usr/local/bin
-
+```
+$ sudo mv geo-netstat /usr/local/bin
+```
 
 How to run webgl-globe (https://hub.docker.com/help/):
-
-  - $ cd geo-netstat
-  - $ git clone https://github.com/dataarts/webgl-globe.git
-  - $ docker-compose up -d
-
+```
+$ cd geo-netstat
+$ git clone https://github.com/dataarts/webgl-globe.git
+$ docker-compose up -d
+```
 
 What can be improved (by you ?):
 
