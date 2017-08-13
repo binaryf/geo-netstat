@@ -10,9 +10,6 @@ Geo-Netstat is a program you run in your terminal and provides geographical loca
 
 (picture)
 
-Geo-Netstat provides geographical location using netstat.
-You can render which processes are connected to the Internet and where they are connected.
-
 Tested on MacOS Sierra.
 
 This product includes GeoLite2 data created by MaxMind, available from
