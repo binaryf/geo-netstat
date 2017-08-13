@@ -7,9 +7,8 @@
 
 Geo-Netstat is a program you run in your terminal and provides geographical location to your application's internet connections.
 
+![alt text](https://github.com/binaryf/geo-netstat/blob/master/GEO-NETSTAT.png)
 
-
-(picture)
 
 Tested on MacOS Sierra.
 
