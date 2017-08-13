@@ -49,5 +49,6 @@ $ docker-compose up -d
 #### What can be improved (by you ?):
 
   - do fancy things with webgl-globe
+  - add a update timer and refresh terminal 
   - support for IPv6
   - update data from the maxmind database
