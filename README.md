@@ -1,9 +1,12 @@
 # geo-netstat
-Provides geographical location to netstat.
-
 
 Where is my Mac connected to ?
 What Application is using that connection ?
+
+
+Geo-Netstat is a program you run in your terminal and provides geographical location to your application's internet connections.
+
+
 
 (picture)
 
@@ -17,16 +20,16 @@ http://www.maxmind.com
 
 
 How to compile libmaxminddb:
-
-  - $ git clone --recursive https://github.com/maxmind/libmaxminddb
-  - $ cd libmaxminddb
-  - $ ./bootstrap
-  - $ ./configure
-  - $ make
-  - $ make check
-  - $ sudo make install
-  - $ sudo ldconfig
-
+```
+$ git clone --recursive https://github.com/maxmind/libmaxminddb
+$ cd libmaxminddb
+$ ./bootstrap
+$ ./configure
+$ make
+$ make check
+$ sudo make install
+$ sudo ldconfig
+```
 
 How to compile geo-netstat:
 
