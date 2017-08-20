@@ -15,7 +15,6 @@ Tested on MacOS Sierra.
 This product includes GeoLite2 data created by MaxMind, available from
 http://www.maxmind.com
 
-
 #### How to compile libmaxminddb:
 ```
 $ git clone --recursive https://github.com/maxmind/libmaxminddb
@@ -27,7 +26,6 @@ $ make check
 $ sudo make install
 $ sudo ldconfig
 ```
-
 
 #### How to install the databases:
 ```
@@ -46,18 +44,15 @@ The location is set in geo-netstat.h:
 #define MMDB_COUNTRY_DB  "/usr/local/db/GeoLite2-Country.mmdb"
 ```
 
-
 #### How to compile geo-netstat:
 ```
 $ gcc -o geo-netstat -L/usr/local/lib/ -I/usr/local/include/ geo-netstat.c -lmaxminddb
 ```
 
-
 #### How to install geo-netstat:
 ```
 $ sudo mv geo-netstat /usr/local/bin
 ```
-
 
 #### WebGL-Globe:
 
@@ -65,8 +60,6 @@ Geo-Netstat outputs a json datafile with latitude, longitude and magnitude
 which can be loaded into WebGL-Globe.
 
 See https://github.com/dataarts/webgl-globe
-
-
 
 #### What can be improved (by you ?):
 
