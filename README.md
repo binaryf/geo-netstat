@@ -31,12 +31,12 @@ $ sudo ldconfig
 ```
 Go to http://dev.maxmind.com/geoip/geoip2/geolite2/
 
-Download the tar.gz's from the links:
+Download these archives:
 'GeoLite2 City'
 'GeoLite2 Country'
 'GeoLite2 ASN'
 
-Uncompress in a folder and copy the folder to a location.
+Uncompress in a folder and copy the folder to a location on your system.
 The location is set in geo-netstat.h:
 
 #define MMDB_ASN_DB      "/usr/local/db/GeoLite2-ASN.mmdb"
