@@ -30,6 +30,19 @@ $ sudo ldconfig
 
 #### How to install the databases:
 ```
+Go to http://dev.maxmind.com/geoip/geoip2/geolite2/
+
+Download the tar.gz's from the links:
+'GeoLite2 City'
+'GeoLite2 Country'
+'GeoLite2 ASN'
+
+Uncompress in a folder and copy the folder to a location.
+The location is set in geo-netstat.h:
+
+#define MMDB_ASN_DB      "/usr/local/db/GeoLite2-ASN.mmdb"
+#define MMDB_CITY_DB     "/usr/local/db/GeoLite2-City.mmdb"
+#define MMDB_COUNTRY_DB  "/usr/local/db/GeoLite2-Country.mmdb"
 
 ```
 #### How to compile geo-netstat:
@@ -41,14 +54,16 @@ $ gcc -o geo-netstat -L/usr/local/lib/ -I/usr/local/include/ geo-netstat.c -lmax
 ```
 $ sudo mv geo-netstat /usr/local/bin
 ```
+#### WebGL-Globe:
 
-#### webgl-globe:
+Geo-Netstat outputs a json datafile with latitude, longitude and magnitude
+which can be loaded into WebGL-Globe.
 
-https://github.com/dataarts/webgl-globe
+See https://github.com/dataarts/webgl-globe
 
 #### What can be improved (by you ?):
 
   - do fancy things with webgl-globe
-  - add a update timer and refresh terminal 
+  - add an update timer and refresh terminal 
   - support for IPv6
   - update data from the maxmind database
