@@ -42,13 +42,9 @@ $ gcc -o geo-netstat -L/usr/local/lib/ -I/usr/local/include/ geo-netstat.c -lmax
 $ sudo mv geo-netstat /usr/local/bin
 ```
 
-#### How to run webgl-globe:
-(https://hub.docker.com/help/)
-```
-$ cd geo-netstat
-$ git clone https://github.com/dataarts/webgl-globe.git
-$ docker-compose up -d
-```
+#### webgl-globe:
+
+https://github.com/dataarts/webgl-globe
 
 #### What can be improved (by you ?):
 
