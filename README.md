@@ -5,11 +5,10 @@
 *What Application is using that connection ?*
 
 
-Geo-Netstat is a program you run in your terminal and provides geographical location to your application's internet connections.
+Geo-Netstat is a program you run in your terminal and it provides geographical location to your application's internet connections.
 
+![alt text](https://github.com/binaryf/geo-netstat/blob/master/GEO-NETSTAT.png)
 
-
-(picture)
 
 Tested on MacOS Sierra.
 
@@ -29,6 +28,10 @@ $ sudo make install
 $ sudo ldconfig
 ```
 
+#### How to install the databases:
+```
+
+```
 #### How to compile geo-netstat:
 ```
 $ gcc -o geo-netstat -L/usr/local/lib/ -I/usr/local/include/ geo-netstat.c -lmaxminddb
@@ -50,5 +53,6 @@ $ docker-compose up -d
 #### What can be improved (by you ?):
 
   - do fancy things with webgl-globe
+  - add a update timer and refresh terminal 
   - support for IPv6
   - update data from the maxmind database
