@@ -63,6 +63,7 @@ See https://github.com/dataarts/webgl-globe
 
 #### What can be improved (by you ?):
 
+  - a more detailed geographical location
   - do fancy things with webgl-globe
   - add an update timer and refresh terminal 
   - support for IPv6
