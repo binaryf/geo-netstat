@@ -28,6 +28,7 @@ $ sudo make install
 $ sudo ldconfig
 ```
 
+
 #### How to install the databases:
 ```
 Go to http://dev.maxmind.com/geoip/geoip2/geolite2/
@@ -43,23 +44,29 @@ The location is set in geo-netstat.h:
 #define MMDB_ASN_DB      "/usr/local/db/GeoLite2-ASN.mmdb"
 #define MMDB_CITY_DB     "/usr/local/db/GeoLite2-City.mmdb"
 #define MMDB_COUNTRY_DB  "/usr/local/db/GeoLite2-Country.mmdb"
-
 ```
+
+
 #### How to compile geo-netstat:
 ```
 $ gcc -o geo-netstat -L/usr/local/lib/ -I/usr/local/include/ geo-netstat.c -lmaxminddb
 ```
 
+
 #### How to install geo-netstat:
 ```
 $ sudo mv geo-netstat /usr/local/bin
 ```
+
+
 #### WebGL-Globe:
 
 Geo-Netstat outputs a json datafile with latitude, longitude and magnitude
 which can be loaded into WebGL-Globe.
 
 See https://github.com/dataarts/webgl-globe
+
+
 
 #### What can be improved (by you ?):
 
