@@ -5,7 +5,7 @@
 *What Application is using that connection ?*
 
 
-Geo-Netstat is a program you run in your terminal and it provides geographical location to your application's internet connections.
+Geo-Netstat is a program you run in your terminal and it provides a geographical location for your application's internet connections.
 
 ![alt text](https://github.com/binaryf/geo-netstat/blob/master/GEO-NETSTAT.png)
 
@@ -14,7 +14,6 @@ Tested on MacOS Sierra.
 
 This product includes GeoLite2 data created by MaxMind, available from
 http://www.maxmind.com
-
 
 #### How to compile libmaxminddb:
 ```
@@ -30,8 +29,21 @@ $ sudo ldconfig
 
 #### How to install the databases:
 ```
+Go to http://dev.maxmind.com/geoip/geoip2/geolite2/
 
+Download these archives:
+'GeoLite2 City'
+'GeoLite2 Country'
+'GeoLite2 ASN'
+
+Uncompress in a folder and copy the folder to a location on your system.
+The location is set in geo-netstat.h:
+
+#define MMDB_ASN_DB      "/usr/local/db/GeoLite2-ASN.mmdb"
+#define MMDB_CITY_DB     "/usr/local/db/GeoLite2-City.mmdb"
+#define MMDB_COUNTRY_DB  "/usr/local/db/GeoLite2-Country.mmdb"
 ```
+
 #### How to compile geo-netstat:
 ```
 $ gcc -o geo-netstat -L/usr/local/lib/ -I/usr/local/include/ geo-netstat.c -lmaxminddb
@@ -42,17 +54,17 @@ $ gcc -o geo-netstat -L/usr/local/lib/ -I/usr/local/include/ geo-netstat.c -lmax
 $ sudo mv geo-netstat /usr/local/bin
 ```
 
-#### How to run webgl-globe:
-(https://hub.docker.com/help/)
-```
-$ cd geo-netstat
-$ git clone https://github.com/dataarts/webgl-globe.git
-$ docker-compose up -d
-```
+#### WebGL-Globe:
+
+Geo-Netstat outputs a json datafile with latitude, longitude and magnitude
+which can be loaded into WebGL-Globe.
+
+See https://github.com/dataarts/webgl-globe
 
 #### What can be improved (by you ?):
 
+  - a more detailed geographical location
   - do fancy things with webgl-globe
-  - add a update timer and refresh terminal 
+  - add an update timer and refresh terminal 
   - support for IPv6
   - update data from the maxmind database
