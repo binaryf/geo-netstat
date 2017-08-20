@@ -5,7 +5,7 @@
 *What Application is using that connection ?*
 
 
-Geo-Netstat is a program you run in your terminal and it provides geographical location to your application's internet connections.
+Geo-Netstat is a program you run in your terminal and it provides geographical location for your application's internet connections.
 
 ![alt text](https://github.com/binaryf/geo-netstat/blob/master/GEO-NETSTAT.png)
 
