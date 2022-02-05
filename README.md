@@ -1,4 +1,4 @@
-# geo-netstat
+# fr-geo-netstat
 
 *Where is my Mac connected to ?*
 
@@ -59,12 +59,4 @@ $ sudo mv geo-netstat /usr/local/bin
 Geo-Netstat outputs a json datafile with latitude, longitude and magnitude
 which can be loaded into WebGL-Globe.
 
-See https://github.com/dataarts/webgl-globe
-
-#### What can be improved (by you ?):
-
-  - a more detailed geographical location
-  - do fancy things with webgl-globe
-  - add an update timer and refresh terminal 
-  - support for IPv6
-  - update data from the maxmind database
+See https://github.com/dataarts/webgl-glob
